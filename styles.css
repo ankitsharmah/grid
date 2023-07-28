@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+.wrapper{
+    display: flex;
+    
+    justify-content: center;
+}
+
+.container{
+    width:800px;
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fitt, 1fr);  
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 30px repeat(3,1fr) ;
+    background-color: rgb(255, 255, 255);
+    grid-gap: 40px;
+    grid-template-areas: 
+    "hd hd"
+    "side1 main1"
+    "side2 main2"
+    "side3 main3"
+    "ft ft";
+
+
+}
+.box{
+    background-color: white;
+    outline: 5px solid rgba(216, 214, 214, 0.466);
+    padding: 20px;
+    /* outline: 1px solid black; */
+
+    transition: ease-in-out 300ms;
+}
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    outline: 2px solid  rgba(216, 214, 214, 0.466);
+}
+#Head{
+    display: flex;
+    grid-area: hd;
+    /* text-align: center; */
+    /* text-align: center; */
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.padding{
+    text-decoration: underline;
+    padding-top: 2rem;
+    font-size: larger;
+    padding-bottom: 0;
+    color: rgba(26, 169, 226, 0.762);
+}
+a{
+    text-decoration: none;
+}
+.padding:hover{
+    cursor: pointer;
+}
+p{
+ font-size: medium;
+    font-weight: 500;
+
+}
+.in-heading{
+    color: rgba(26, 169, 226, 0.762);
+        font-size:22px;
+}
+.in-heading1{
+    color:rgb(0, 237, 0) ;
+        font-size:22px;
+}
+.in-heading1:hover{
+    cursor: pointer;
+}
+
+.in-heading:hover{
+    cursor: pointer;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+.for-padding{
+    padding-top: .4rem;
+}
+.SUB{
+    padding-top:30px ;
+    text-align: start;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.material-symbols-outlined {
+    padding-top: 25px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  
+}
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+.subs{
+        font-family: 'Poppins', sans-serif;
+
+    font-size: large;
+    /* font-weight: 900; */
+    text-decoration: underline;
+    padding-top: 15px;
+    
+}
+.subs:hover{
+    cursor: pointer;
+}
+/* #foot{
+    grid-area: hd;
+} */
+@media(max-width:400px){
+    .conatiner{
+        grid-template-rows: 30px repeat(6,1fr);
+        grid-gap: 5px;
+
+    }
+}
